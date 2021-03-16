@@ -1,0 +1,10 @@
+(menhir
+  (modules parser)
+)
+
+(executable
+ (name calc)
+ (preprocess (pps sedlex.ppx))
+ (libraries sedlex menhirLib)
+)
+
